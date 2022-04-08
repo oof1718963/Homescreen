@@ -2,6 +2,8 @@ html {
 	height: 100%;
 	/* background: #e8e8e8; */
 	background: white;
+	/* width:auto; */
+	/* height: 100; */
 }
 body {
 	position: relative;
