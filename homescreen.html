@@ -11,11 +11,62 @@
 		html { box-sizing: border-box; }
 			html *{box-sizing: inherit;}
 			html:before,html:after {box-sizing: inherit;}
-			html, body {margin: 0; height: 100%; overflow: hidden}	
+			html, body {margin: 0; height: 100%; overflow: hidden}
+
+			@import url('https://fonts.googleapis.com/css?family=Orbitron');
+
+html {
+  font-family: 'Orbitron', sans-serif;
+}
+
+body {
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+#clock {
+  color: #5CEEA7;
+  font-size: 80px;
+  font-variant-numeric: tabular-nums;
+}
 	</style>
 </head>
 <body>
+
+<script>
+
+function showTime() {
+  var date = new Date();
+  var hr = date.getHours();
+  var min = date.getMinutes();
+  var sec = date.getSeconds();
+  var session = "AM";
+  
+  hr = (hr === 0) ? 12 : hr;
+  if (hr > 12) {
+    hr = hr - 12;
+    session = "PM";
+  }
+  hr = (hr < 10) ? "0" + hr : hr;
+  min = (min < 10) ? "0" + min : min;
+  sec = (sec < 10) ? "0" + sec : sec;
+  
+  var time = hr + ":" + min + ":" + sec + " " + session;
+  
+  var clock = document.querySelector('#clock');
+  clock.innerText = time;
+  
+  setTimeout(showTime, 1000);
+}
+
+showTime();
+</script>
+
 <section class="stripe" id="professor">
+	<div id="clock"></div>
 	<div class="container">
 		<div class="ear left"></div>
 		<div class="ear right"></div>
