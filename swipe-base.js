@@ -17,11 +17,11 @@ function handleTouchStart(evt) {
 };                                                
              
 function swipeLeft() {
-    window.location.href = "/clock/clock.html"
+    window.location.href = "file:///opt/mycroft/skills/Homescreen/clock/clock.html"
 }
 
 function swipeRight() {
-    window.location.href = "/homescreen/homescreen.html"
+    window.location.href = "fiel:///opt/mycroft/skills/Homescreen/homescreen/homescreen.html"
 }
 
 function handleTouchMove(evt) {
