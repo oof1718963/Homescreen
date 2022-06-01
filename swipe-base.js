@@ -21,7 +21,7 @@ function swipeLeft() {
 }
 
 function swipeRight() {
-    window.location.href = "fiel:///opt/mycroft/skills/Homescreen/homescreen/homescreen.html"
+    window.location.href = "file:///opt/mycroft/skills/Homescreen/homescreen/homescreen.html"
 }
 
 function handleTouchMove(evt) {
