@@ -1,1 +1,0 @@
-Made By [`Farid Vatani`](https://codepen.io/faridvatani/pen/PoQRPar) on [codepent](https://codepen.io/)
